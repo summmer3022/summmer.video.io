@@ -1,45 +1,31 @@
-<!DOCTYPE html>  
-<html lang="en">  
-<head>  
-  <meta charset="UTF-8">  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-  <title>1</title>  
-  <style>  
-    body, html {  
-      margin: 0;  
-      padding: 0;  
-      height: 100%;  
-      overflow-x: hidden; /* 隐藏水平滚动条 */  
-    }  
-  
-    #asciicast-container {  
-      width: 100%;  
-      height: 100vh; /* 使用vh单位来确保与视口高度相同 */  
-      overflow: auto; /* 如果需要的话，可以添加垂直滚动条 */  
-      position: relative; /* 根据需要设置 */  
-    }  
-  </style>  
-</head>  
-<body>  
-  
-<div id="asciicast-container">  
-  <!-- 假设asciicast播放器将通过某种方式被插入到这里 -->  
-  <!-- 可能是通过JavaScript动态插入的iframe或其他元素 -->  
-</div>  
-  
-<script src="https://asciinema.org/a/8EMOuBOBT02U8BNJgN0G09Dza.js" id="asciicast-8EMOuBOBT02U8BNJgN0G09Dza" async="true"></script>  
-  
-<script>  
-  // 假设你有一个函数或方法可以从asciicast的脚本中接收或初始化播放器  
-  // 并且你可以将它附加到#asciicast-container中  
-  // 例如：  
-  // function initializeAsciicastPlayer(containerId) {  
-  //   // 初始化代码...  
-  //   var container = document.getElementById(containerId);  
-  //   // 将asciicast播放器插入到container中...  
-  // }  
-  // initializeAsciicastPlayer('asciicast-container');  
-</script>  
-  
-</body>  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fullscreen Player</title>
+  <style>
+    /* 设置body充满整个屏幕 */
+    body, html {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      /* overflow: hidden; /* 隐藏滚动条，确保内容不溢出 */
+    }
+
+    /* 假设播放器插入后会有一个默认的容器或直接撑满body，这里直接对body进行样式设定 */
+    #asciicast-8EMOuBOBT02U8BNJgN0G09Dza {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <!-- 脚本保持不变 -->
+  <script src="https://asciinema.org/a/8EMOuBOBT02U8BNJgN0G09Dza.js" id="asciicast-8EMOuBOBT02U8BNJgN0G09Dza" async="true"></script>
+</body>
 </html>
